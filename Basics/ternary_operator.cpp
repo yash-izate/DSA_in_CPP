@@ -8,8 +8,11 @@ int main () {
     cin >> age;
 
     string isAdult = (age >= 18) ? "Yes" : "No";
+    cout << "Is adult? " << isAdult << endl;
 
-    cout << isAdult;
+    bool isEven = (age % 2 == 0) ? true : false;
+    string temp = (isEven)? "Even" : "Odd";
+    cout << "Age is: " << temp << endl;
 
     return 0;
 }
