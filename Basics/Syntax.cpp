@@ -1,11 +1,11 @@
-//Comments in cpp
+// Comments in cpp
 
 #include <iostream>
 using namespace std;
 
-int main() {
-
-    cout<< "Hello World!";
+int main()
+{
+    cout << "Hello World!";
 
     return 0;
 }
