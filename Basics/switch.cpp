@@ -3,35 +3,36 @@ using namespace std;
 
 int main()
 {
-    int day;
-    cout << "Enter day number (1-7): ";
-    cin >> day;
+    double num1, num2;
+    char op;
 
-    switch (day)
+    cout << "Enter first number: ";
+    cin >> num1;
+    cout << "Enter operator (+, -, *, /): ";
+    cin >> op;
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    switch (op)
     {
-    case 1:
-        cout << "Monday";
+    case '+':
+        cout << "Result: " << num1 + num2;
         break;
-    case 2:
-        cout << "Tuesday";
+    case '-':
+        cout << "Result: " << num1 - num2;
         break;
-    case 3:
-        cout << "Wednesday";
+    case '*':
+        cout << "Result: " << num1 * num2;
         break;
-    case 4:
-        cout << "Thursday";
-        break;
-    case 5:
-        cout << "Friday";
-        break;
-    case 6:
-        cout << "Saturday";
-        break;
-    case 7:
-        cout << "Sunday";
+    case '/':
+        if (num2 != 0)
+            cout << "Result: " << num1 / num2;
+        else
+            cout << "Error: Division by zero!";
         break;
     default:
-        cout << "Invalid day number";
+        cout << "Invalid operator!";
     }
+
     return 0;
 }
