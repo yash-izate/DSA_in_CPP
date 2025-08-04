@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int math, phy, chem;
+    float math, phy, chem;
 
     cout << "Welcome to Average Calculator!" << endl;
 
@@ -14,7 +14,7 @@ int main()
     cout << "Enter marks in Chemistry: ";
     cin >> chem;
 
-    int avg = (math + phy + chem) / 3;
+    float avg = (math + phy + chem) / 3;
 
     cout << "\nAverage Marks: " << avg;
 
