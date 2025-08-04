@@ -12,23 +12,20 @@ int main()
     if (income < 5)
     {
         tax = 0;
-        cout << "Tax = " << tax;
     }
-    else if (income >= 5 && income < 10)
+    else if (income < 10)
     {
         tax = (income - 5) * 0.2;
-        cout << "Tax = " << tax;
     }
-    else if (income >= 10 && income < 20)
+    else if (income < 20)
     {
-        tax = ((income - 5) * 0.2 + (income - 10) * 0.25);
-        cout << "Tax = " << tax;
+        tax = (5 * 0.2) + (income - 10) * 0.25;
     }
     else
     {
-        tax = ((income - 5) * 0.2 + (income - 10) * 0.25 + (income - 20) * 0.3);
-        cout << "Tax = " << tax;
+        tax = (5 * 0.2) + (10 * 0.25) + (income - 20) * 0.3;
     }
+    cout << "Tax = " << tax * 100000;
 
     return 0;
 }
