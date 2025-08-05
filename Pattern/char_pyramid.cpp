@@ -1,4 +1,7 @@
-// your code here
+// A 
+// B C 
+// D E F
+// G H I J
 
 #include <iostream>
 using namespace std;
