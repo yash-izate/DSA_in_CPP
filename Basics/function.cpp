@@ -3,14 +3,20 @@
 #include <iostream>
 using namespace std;
 
-void sayHello()
-{
-    cout << "Happy Birthday To You";
+int sum(int x, int y);         //function declaration
+
+int main() {
+
+    int result = sum(7,3);     //function calling
+
+    cout << "Sum: " << result << endl;
+    
+ 
+    return 0;
 }
 
-int main()
-{
-    sayHello();
+int sum(int a, int b) {        //function defination
+    int sum = a + b;
+    return sum;
 
-    return 0;
 }
