@@ -3,11 +3,13 @@
 #include <iostream>
 using namespace std;
 
-int sum(int x, int y);         //function declaration
+//function declaration
+int sum(int x, int y);         
 
 int main() {
 
-    int result = sum(7,3);     //function calling
+    //function calling
+    int result = sum(7,3);        // here 7 and 3 are arugments
 
     cout << "Sum: " << result << endl;
     
@@ -15,7 +17,8 @@ int main() {
     return 0;
 }
 
-int sum(int a, int b) {        //function defination
+//function defination
+int sum(int a, int b) {          //a and b are parameter
     int sum = a + b;
     return sum;
 
