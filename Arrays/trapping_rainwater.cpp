@@ -15,7 +15,7 @@ int main() {
 
     vector<int> leftMax(n), rightMax(n);
 
-    // Step 1: Fill leftMax array
+    // Step 1:  Fill leftMax array
     leftMax[0] = height[0];
     for (int i = 1; i < n; i++) {
         leftMax[i] = max(leftMax[i - 1], height[i]);
