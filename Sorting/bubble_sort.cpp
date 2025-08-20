@@ -1,3 +1,10 @@
+// Bubble Sort is a simple sorting algorithm that repeatedly compares adjacent elements in an array and swaps them if they are in the wrong order.
+
+// Time Complexity:
+
+// Worst / Average: O(n²)
+// Best (already sorted): O(n)
+
 #include <iostream>
 using namespace std;
 
@@ -39,7 +46,7 @@ void bubbleSort(int *arr, int n)
 int main()
 {
     // int arr[] = {5, 9, 0, 4, 1, 3, 2};
-    
+
     int arr[] = { 0, 1, 2, 3, 4, 5, 9};
 
     int size = sizeof(arr) / sizeof(int);
