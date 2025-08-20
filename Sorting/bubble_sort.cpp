@@ -7,13 +7,16 @@ void sortedArray(int *arr, int n)
     for (int i = 0; i < n; i++)
     {
         cout << arr[i];
-        if (i < n - 1) cout << ", ";  // no extra comma
+        if (i < n - 1)
+            cout << ", "; // no extra comma
     }
     cout << endl;
 }
 
 void bubbleSort(int *arr, int n)
 {
+    bool isSwap = false;
+
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = 0; j < n - i - 1; j++)
@@ -21,14 +24,24 @@ void bubbleSort(int *arr, int n)
             if (arr[j] > arr[j + 1])
             {
                 swap(arr[j], arr[j + 1]);
+                isSwap = true;
             }
+        }
+
+        if (!isSwap)
+        {
+            cout << "Array is already sorted." << endl;
+            return;
         }
     }
 }
 
 int main()
 {
-    int arr[] = {5, 9, 0, 4, 1, 3, 2};
+    // int arr[] = {5, 9, 0, 4, 1, 3, 2};
+    
+    int arr[] = { 0, 1, 2, 3, 4, 5, 9};
+
     int size = sizeof(arr) / sizeof(int);
 
     bubbleSort(arr, size);
