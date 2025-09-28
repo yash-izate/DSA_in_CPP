@@ -6,9 +6,9 @@ int main() {
     int age;
     string name;
 
-    cout << "Enter your name: \n"<< endl;
+    cout << "Enter your name: \n";
     cin >> name;
-    cout << "Enter age: \n" << endl;
+    cout << "Enter age: \n";
     cin >> age;
     
     cout <<"Your name is " << name << endl;

@@ -1,6 +1,1 @@
-Enter your name: 
 
-Enter age: 
-
-Your name is sharwari
-Your age is 20
